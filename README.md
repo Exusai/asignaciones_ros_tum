@@ -14,6 +14,7 @@ Cargando el primer mundo del TMR y usando el control del teclado. http://wiki.ro
 Cargando el primer mundo del TMR, usando el control del teclado y visualizando el tópico de la cámara frontal del dron.
 ![imagen de tarea 2.3](https://github.com/Exusai/asignaciones_ros_tum/raw/master/imgs_asig/htop3.png)
 
+En general si se alenta la computadora tras cargar el primer mundo del TMR y haciendo las demás simulaciones, no es muy responsivo pero creo que aún es utilizable.
 
 ## Tarea 3:
 El código funcional esta en este repositorio.
