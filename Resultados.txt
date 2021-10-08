@@ -1,0 +1,24 @@
+neofetch:
+faber@DESKTOP-SCNTNVI-wsl:~/Desktop/asiganaciones$ neofetch
+            .-/+oossssoo+/-.               faber@DESKTOP-SCNTNVI-wsl 
+        `:+ssssssssssssssssss+:`           ------------------------- 
+      -+ssssssssssssssssssyyssss+-         OS: Ubuntu 18.04.6 LTS on Windows 10 
+    .ossssssssssssssssssdMMMNysssso.       Kernel: 4.19.128-microsoft-standard 
+   /ssssssssssshdmmNNmmyNMMMMhssssss/      Uptime: 3 hours, 12 mins 
+  +ssssssssshmydMMMMMMMNddddyssssssss+     Packages: 2875 
+ /sssssssshNMMMyhhyyyyhmNMMMNhssssssss/    Shell: bash 4.4.20 
+.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Resolution: 1360x768 
++sssshhhyNMMNyssssssssssssyNMMMysssssss+   DE: GNOME 3.28.4 
+ossyNMMMNyMMhsssssssssssssshmmmhssssssso   WM: GNOME Shell 
+ossyNMMMNyMMhsssssssssssssshmmmhssssssso   WM Theme: Adwaita 
++sssshhhyNMMNyssssssssssssyNMMMysssssss+   Theme: Adwaita-dark [GTK2/3] 
+.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Icons: Ubuntu-mono-dark [GTK2/3] 
+ /sssssssshNMMMyhhyyyyhdNMMMNhssssssss/    Terminal: gnome-terminal 
+  +sssssssssdmydMMMMMMMMddddyssssssss+     CPU: Intel i5-5200U (4) @ 2.194GHz 
+   /ssssssssssshdmNNNNmyNMMMMhssssss/      Memory: 2448MiB / 6274MiB 
+    .ossssssssssssssssssdMMMNysssso. 
+      -+sssssssssssssssssyyyssss+-                                 
+        `:+ssssssssssssssssss+:` 
+            .-/+oossssoo+/-. 
+
+

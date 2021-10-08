@@ -1,0 +1,58 @@
+tareas:
+
+De preferencia utilicen Github para hacer la documentación o el reporte de lo que vayan trabajando, esto también para ver más fácil su código, pero hagan lo que se les haga más sencillo y que les quite menos tiempo.
+
+**Traten de resolverlas cada uno.
+
+Si tienen dudas pregunten, si llevan mucho tiempo en algo (+2 días) pregunten, no es examen. :)
+
+Tarea 1:
+	
+Obtener las características de la computadora, utilizando el comando neofetch.
+
+Tarea 2:
+
+Probar el rendimiento de la computadora con el simulador.
+
+Utilizar el comando htop para visualizar el comportamiento del procesador durante la ejecución:
+	- La computadora al iniciar.
+	- Solamente cargando el primer mundo del TMR.
+	- Cargando el primer mundo del TMR y usando el control del teclado. http://wiki.ros.org/teleop_twist_keyboard
+	- Cargando el primer mundo del TMR, usando el control del teclado y visualizando el tópico de la cámara frontal del dron.
+
+Anotar el comportamiento promedio en cada caso, en caso de que la computadora comience a trabarse anotar eso y dar por teminada esa prueba, también es importante anotar si comienza a aumentar la temperatura.
+
+Tarea 3:
+
+Encontrar los bugs en un programa. 
+
+Para completar esta tarea deberán leer la documentación del dron y utilizar la documentación de ROS sobre los tópicos que genera el dron y cómo extraer información de los mismos.
+
+a) Hacer que los botones de la interfaz controlen los movimientos básicos del dron, tomando en cuenta el despegue y el aterrizaje.
+
+b) Desplegar los datos de la posición y orientación del dron en la interfaz.
+
+c) Obtener un diagrama de los nodos y tópicos una vez terminados los incisos anteriores, usen rqt_graph.
+
+d) Grabar el video del funcionamiento de la interfaz y el dron, si no pueden capturar la pantalla, usen el celular.
+
+HINT: Dentro del código deje pistas, deben leerlo. NO hay un orden para resolver los bugs, deben decidir a partir del código, cómo y que les puede servir.
+
+Tarea 4:
+
+Hacer un control de moviento y posición del dron.
+
+Utilizando la información de posición del dron, deberan elaborar un control de posición:
+	
+	a) Avanzar 2 m hacia adelante (Eje x), manteniendo altura constante  de 2.5 metros (Eje z), sin movimiento lateral(Eje y) y sin movimiento rotacional (Eje z).
+	
+	b) Desplazarse 2 m a la izquierda (Eje y), manteniendo altura constante de 1 m (Eje z), sin movimiento frontal (Eje x) y sin movimiento rotacional.
+
+	c) Obtener un diagrama de nodos y tópicos que muestre la retroalimentación.
+
+	d) Video de la prueba.
+
+	e) Gráficas de la posición y orientación del dron.
+
+HINT: Utilicen parte del código anterior para realizar la retroalimentación de su control, pueden usar el control que quieran el objetivo solo es que puedan hacer una interacción de los datos con el control, no importa mucho ahorita si es lento, rápido o muy estable, aunque sería deseable.
+	
