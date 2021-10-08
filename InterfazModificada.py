@@ -28,13 +28,23 @@ y_p = StringVar()
 z_p = StringVar()
 z_o = StringVar()
 
+init_set = False
+x_init = 0
+y_init = 0
+
 
 #Callback de pose y orientacion simulador
 def pose_callback(data):
-    global x_p, y_p, z_p
+    global x_p, y_p, z_p, init_set, x_init, y_init
+
+    if not init_set:
+        x_init = data.transforms[0].transform.translation.x
+        y_init = data.transforms[0].transform.translation.y
+        init_set = True
+
     z_p.set("{0:.2f}".format(data.transforms[1].transform.translation.z))
-    y_p.set("{0:.2f}".format(data.transforms[0].transform.translation.y))
-    x_p.set("{0:.2f}".format(data.transforms[0].transform.translation.x))
+    y_p.set("{0:.2f}".format(data.transforms[0].transform.translation.y - y_init))
+    x_p.set("{0:.2f}".format(data.transforms[0].transform.translation.x - x_init))
 
 
 
@@ -56,7 +66,7 @@ def despegar_pub():
     takeoff_pub = rospy.Publisher('/ardrone/takeoff', Empty, queue_size=1)
     takeoff_pub.publish(Empty())
 
-def land_pub():
+def aterrizar_pub():
     land_pub = rospy.Publisher('/ardrone/land', Empty, queue_size=1)
     ttk.Label(mainframe, text="              ").grid(column=3, row=1, sticky=W)
     ttk.Label(mainframe, text="Land").grid(column=3, row=1, sticky=W)
@@ -132,7 +142,7 @@ ttk.Button(mainframe, text="Abajo", command=down_pub).grid(column=3, row=7, stic
 
 
 ttk.Button(mainframe, text="Take Off", command=despegar_pub).grid(column=3, row=4, sticky=W)
-ttk.Button(mainframe, text="Land", command=land_pub).grid(column=2, row=4, sticky=W)
+ttk.Button(mainframe, text="Land", command=aterrizar_pub).grid(column=2, row=4, sticky=W)
 
 ttk.Label(mainframe, text="1").grid(column=3, row=1, sticky=W)
 
